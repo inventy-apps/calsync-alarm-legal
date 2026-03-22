@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy | CalSync Alarm</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif; color: #1d1d1b; background: #fff; line-height: 1.8; padding: 24px 16px 64px; max-width: 680px; margin: 0 auto; }
+h1 { font-size: 22px; font-weight: 600; margin-bottom: 8px; }
+h2 { font-size: 16px; font-weight: 600; margin-top: 32px; margin-bottom: 12px; padding-bottom: 6px; border-bottom: 1px solid #e5e5e5; }
+h3 { font-size: 14px; font-weight: 600; margin-top: 20px; margin-bottom: 8px; }
+p { font-size: 14px; margin-bottom: 12px; }
+ol, ul { font-size: 14px; margin-bottom: 12px; padding-left: 24px; }
+li { margin-bottom: 6px; }
+.meta { font-size: 13px; color: #888; margin-bottom: 24px; }
+.divider { border: none; border-top: 1px solid #e5e5e5; margin: 24px 0; }
+.footer { margin-top: 40px; font-size: 13px; color: #888; text-align: center; }
+.lang-switch { display: flex; gap: 8px; margin-bottom: 20px; }
+.lang-btn { display: inline-block; font-size: 13px; padding: 6px 16px; border-radius: 6px; border: 1px solid #ccc; background: #fff; color: #333; cursor: pointer; text-decoration: none; }
+.lang-btn.active { background: #0066cc; color: #fff; border-color: #0066cc; }
+a { color: #0066cc; text-decoration: none; }
+a:hover { text-decoration: underline; }
+.note { font-size: 13px; color: #666; background: #f5f5f5; padding: 12px 16px; border-radius: 8px; margin-bottom: 20px; }
+table { width: 100%; border-collapse: collapse; margin-bottom: 16px; font-size: 13px; }
+th, td { padding: 8px 12px; border: 1px solid #e5e5e5; text-align: left; vertical-align: top; }
+th { background: #f9f9f9; font-weight: 600; white-space: nowrap; }
+@media (prefers-color-scheme: dark) {
+  body { background: #1c1c1e; color: #e5e5e5; }
+  h2 { border-bottom-color: #333; }
+  .meta { color: #8e8e93; }
+  .divider { border-top-color: #333; }
+  .footer { color: #8e8e93; }
+  a { color: #4da3ff; }
+  .lang-btn { background: #2c2c2e; color: #e5e5e5; border-color: #555; }
+  .lang-btn.active { background: #0066cc; color: #fff; border-color: #0066cc; }
+  .note { background: #2c2c2e; color: #aaa; }
+  th, td { border-color: #333; }
+  th { background: #2c2c2e; }
+}
+</style>
+</head>
+<body>
+
+<div class="lang-switch">
+  <a href="privacy.html" class="lang-btn">日本語</a>
+  <a href="privacy-en.html" class="lang-btn active">English</a>
+</div>
+
+<h1>CalSync Alarm Privacy Policy</h1>
+<p class="meta">Last updated: March 22, 2026</p>
+
+<p class="note">The Japanese version of this Privacy Policy is the authoritative version. In the event of any discrepancy between the Japanese version and this English translation, the Japanese version shall prevail.</p>
+
+<hr class="divider">
+
+<h2>1. Introduction</h2>
+<p>Inventy Inc. ("the Company") considers the protection of users' personal information and privacy in the iOS application "CalSync Alarm" ("the App") to be of utmost importance. This Privacy Policy explains the types of information the App collects, the purposes of use, storage methods, and sharing with third parties.</p>
+
+<h2>2. Information We Collect</h2>
+
+<h3>2-1. Google Account information</h3>
+<p>The App uses Google Sign-In for authentication. During this process, we obtain the following information:</p>
+<table>
+<tr><th>Information</th><th>Purpose</th></tr>
+<tr><td>Display name</td><td>User display within the App</td></tr>
+<tr><td>Email address</td><td>Account identification</td></tr>
+<tr><td>Profile image URL</td><td>User display within the App</td></tr>
+<tr><td>OAuth authentication token</td><td>Authentication for Google Calendar API access</td></tr>
+</table>
+
+<h3>2-2. Google Calendar data</h3>
+<p>With the user's consent, the App obtains the following information through the Google Calendar API:</p>
+<table>
+<tr><th>Information</th><th>Purpose</th></tr>
+<tr><td>Event titles</td><td>Used as alarm display names</td></tr>
+<tr><td>Event start/end times</td><td>Calculating alarm times</td></tr>
+<tr><td>Event notification settings</td><td>Referencing alarm notification timing</td></tr>
+<tr><td>Calendar type/ID</td><td>Identifying calendars to sync</td></tr>
+</table>
+
+<h3>2-3. Data generated within the App</h3>
+<table>
+<tr><th>Information</th><th>Purpose</th></tr>
+<tr><td>Morning reminder time setting</td><td>Triggering the daily morning reminder alarm</td></tr>
+<tr><td>Alarm ON/OFF settings</td><td>Managing alarms for user-selected events</td></tr>
+<tr><td>Subscription status</td><td>Determining premium feature availability</td></tr>
+</table>
+
+<h3>2-4. Information we do NOT collect</h3>
+<p>The App does not collect the following information:</p>
+<ul>
+<li>Location data</li>
+<li>Contacts</li>
+<li>Photos or media</li>
+<li>Health or fitness data</li>
+<li>Device advertising identifier (IDFA)</li>
+<li>Event descriptions, attendee information, or attachments</li>
+</ul>
+
+<h2>3. Data Storage</h2>
+<ol>
+<li>All calendar data and app settings collected by the App are stored <strong>locally on the user's device</strong>. Storage is managed using Apple's SwiftData framework.</li>
+<li>The Company does not transmit or store user data obtained through the App on our servers.</li>
+<li>OAuth authentication tokens are stored in the iOS Keychain (encrypted secure storage).</li>
+</ol>
+
+<h2>4. Third-Party Disclosure</h2>
+<ol>
+<li>The Company does not sell, rent, or share users' personal information with third parties.</li>
+<li>The App communicates with the following external services:
+  <ul>
+  <li><strong>Google (Google Sign-In, Google Calendar API)</strong>: For user authentication and calendar data retrieval. All communications are encrypted via HTTPS. Please refer to Google's Privacy Policy at <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a>.</li>
+  <li><strong>Apple (StoreKit, AlarmKit)</strong>: For subscription management and system alarm registration. Please refer to Apple's Privacy Policy at <a href="https://www.apple.com/legal/privacy/" target="_blank">https://www.apple.com/legal/privacy/</a>.</li>
+  </ul>
+</li>
+<li>Other than the above, we will not disclose user data to third parties except when required by law.</li>
+</ol>
+
+<h2>5. Advertising and Tracking</h2>
+<p>The App does not contain advertising features, tracking functionality, or analytics SDKs. We do not collect, analyze, or share user behavioral data with third parties.</p>
+
+<h2>6. Data Deletion</h2>
+<p>Users can delete their data through the following methods:</p>
+<ol>
+<li><strong>Signing out from the App</strong>: Signing out from the settings screen within the App will delete the OAuth authentication token.</li>
+<li><strong>Deleting the App</strong>: Removing the App from the device will delete all locally stored data (cached calendar data, settings).</li>
+<li><strong>Revoking access from Google Account</strong>: Users can revoke CalSync Alarm's access permissions from their <a href="https://myaccount.google.com/permissions" target="_blank">Google Account security settings</a>.</li>
+</ol>
+
+<h2>7. Children's Privacy</h2>
+<p>The App is not intended for children under the age of 13. We do not knowingly collect personal information from children under 13. If we learn that personal information of a child under 13 has been collected, we will promptly delete it.</p>
+
+<h2>8. Security</h2>
+<ol>
+<li>All API communications with Google are conducted over HTTPS (TLS encryption).</li>
+<li>OAuth authentication tokens are stored in the iOS Keychain and protected by the device's hardware security.</li>
+<li>Calendar data is stored in SwiftData on the device and encrypted by iOS data protection features.</li>
+<li>However, we cannot guarantee complete security of information transmitted over the internet.</li>
+</ol>
+
+<h2>9. Changes to This Policy</h2>
+<ol>
+<li>The Company may modify this Privacy Policy as necessary.</li>
+<li>In the case of significant changes, users will be notified through in-app notifications or by posting on our website.</li>
+<li>The modified Policy shall take effect upon being posted within the App or on our website.</li>
+</ol>
+
+<h2>10. Contact Us</h2>
+<p>For questions or inquiries regarding this Privacy Policy, please contact us at:</p>
+<ul>
+<li>Company: Inventy Inc.</li>
+<li>Email: <a href="mailto:support@inventy.jp">support@inventy.jp</a></li>
+</ul>
+
+<p style="margin-top: 24px;">Related documents: <a href="terms-en.html">Terms of Service</a></p>
+
+<hr class="divider">
+
+<p class="footer">CalSync Alarm &copy; 2026 Inventy Inc.</p>
+
+</body>
+</html>
